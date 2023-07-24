@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#formularioCadastroCliente{
+	
+	background-color: rgb(25,150,255);
+	width: 500px;
+	height: 300px;
+	margin-top: 50px;
+	
+}
+
+#titulo{
+	
+	margin-top: 20px;
+	margin-left: 100px;
+	
+}
+
+#nome{
+	
+	margin-top: 25px;
+	margin-left: 25px;
+	
+}
+
+#telefone{
+	
+	margin-top: 25px;
+	margin-left: 25px;
+	
+}
+
+#botao{
+	
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 50px;
+
+}

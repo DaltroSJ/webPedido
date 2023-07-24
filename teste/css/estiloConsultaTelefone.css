@@ -1,0 +1,38 @@
+#caixa_consulta_telefone{
+	
+	background-color: gray;
+	width: 350px;
+	height: 175px;
+	align-content: center;
+	display: block;
+	border: dashed; 
+	margin-top: 20px;
+	margin-left: 350px;
+	
+}
+
+.body{
+
+	background-color: black;
+	
+}
+
+#mensagem{
+	
+	margin-top: 25px;
+	
+	
+}
+
+#campo{
+	
+	margin-left: 80px;
+	
+}
+
+#botao{
+	
+	margin-top: 10px;
+	margin-left: 25px;
+	
+}
