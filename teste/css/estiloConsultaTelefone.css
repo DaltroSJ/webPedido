@@ -2,12 +2,13 @@
 	
 	background-color: gray;
 	width: 350px;
-	height: 175px;
+	height: 185px;
 	align-content: center;
 	display: block;
 	border: dashed; 
 	margin-top: 20px;
 	margin-left: 350px;
+    border-radius: 20px;
 	
 }
 
@@ -19,20 +20,21 @@
 
 #mensagem{
 	
-	margin-top: 25px;
-	
+	margin-top: 15px;
+	margin-left: 70px;
 	
 }
 
 #campo{
 	
-	margin-left: 80px;
+	margin-left: 70px;
 	
 }
 
 #botao{
 	
-	margin-top: 10px;
-	margin-left: 25px;
+	margin: center;
+	margin-left: 110px;
+	border-radius: 20px;
 	
 }
