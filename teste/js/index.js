@@ -30,6 +30,14 @@
 }
 */
 
+//consulta de telefone abre assim que pagina é carregada
+function abreConsultaTelefone(){
+	
+
+	
+}
+
+
 function consultarCadastro(){
 
 	var tel = window.document.getElementById('telefone').value;
@@ -46,6 +54,10 @@ function consultarCadastro(){
 		success: function(resposta){
 			
 			console.log(resposta);
+			
+			//abre uma sessão de usuario, com os dados json, depois é redirecionado para pagina principal, onde vai fazer o pedido
+			
+			//window.location.href = 'C:\\Users\\DSJ\\Documents\\GitHub\\webPedido\\teste\\paginas\\CadastroCliente.html';
 			
 		},
 		error: function(resposta){
