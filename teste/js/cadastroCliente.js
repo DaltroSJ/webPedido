@@ -20,11 +20,15 @@ function geraJson() {
 
 function cadastraCliente() {
 
-	var url = 'http://127.0.0.1:8080/cliente';
+	var url = 'http://localhost:8080/cliente';
 
 	var j = geraJson();
 
 	var xhr = new XMLHttpRequest();
+
+	xhr.open('POST', url, true);
+
+	xhr.setRequestHeader('Content-Type', 'application/json');
 
 	xhr.onreadystatechange = function() {
 
@@ -34,23 +38,17 @@ function cadastraCliente() {
 
 			console.log('Requisição Bem sucedida: \n' + resposta);
 
-		} else {
+		} else if(xhr.readyState === 4 && xhr.status === 500) {
 
 			var resposta = xhr.responseText;
 
-			console.log('Erro na requisição: \n' + resposta);
+			console.log('Erro de Servidor:');
 
 		}
 	}
 
-		xhr.open('POST', url, true);
-		
-		xhr.setRequestHeader('Access-Control-Allow-Origin', 'http://localhost:8080');
-		xhr.setRequestHeader('Content-Type', 'application/json');
-	
-
-		xhr.send(j);
+	xhr.send(j);
 
 
 
-	}
+}
